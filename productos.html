@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Productos</title>
+
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="logo.png"></a>
+        <h1>LORD CAKE</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Catálogo de Productos</h1>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="bandeja.png.jpeg" alt="Producto 1">
+                <div class="producto-info">
+                    <h2>Bandeja.</h2>
+                    <p>Bandeja de 15-30 pz de minihotcakes.</p>
+                    <p class="precio">$30-$55</p>
+                </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="creppasm.png.jpeg" alt="Producto 2">
+                <div class="producto-info">
+                    <h2>Creppa</h2>
+                    <p>Cuatro piezas de creppas bañadas en chocolate con porciones de mango picado.</p>
+                    <p class="precio">$45.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="creppas.png.jpeg" alt="Producto 2">
+                <div class="producto-info">
+                    <h2>Creppa</h2>
+                    <p>Cuatro piezas de creppas bañadas en caramelo con porciones de fresas picadas.</p>
+                    <p class="precio">$45.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="banderillas.png.jpeg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Banderillas</h2>
+                    <p>4 Banderillas de minihotcakes.</p>
+                    <p class="precio">$35.00</p>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="chocoreta.png.jpeg" alt="Producto 5">
+                <div class="producto-info">
+                    <h2>Frappe</h2>
+                    <p>Frappe sabor chocoreta.</p>
+                    <p class="precio">$45.00</p>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="oreo.png.jpeg" alt="Producto 6">
+                <div class="producto-info">
+                    <h2>Frappe</h2>
+                    <p>Frappe sabor oreo.</p>
+                    <p class="precio">$35.00</p>
+                </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="cmango.png.jpeg" alt="Producto 7">
+                <div class="producto-info">
+                    <h2>La Creme de la Creme.</h2>
+                    <p>Una fina copa de crema dulce con mango.</p>
+                    <p class="precio">$30.00</p>
+                </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="cfresa.png.jpeg" alt="Producto 8">
+                <div class="producto-info">
+                    <h2>La Creme de la Creme</h2>
+                    <p>Una fina copa de crema dulce con mango.</p>
+                    <p class="precio">$30.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2023 Mi empresa. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: PasteleriaAPK@hotmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

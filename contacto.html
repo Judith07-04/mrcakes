@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Contacto</title>
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="logo.png"></a>
+        <h1>LORD CAKE</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="quienes.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Contáctanos</h1>
+        <div class="contacto">
+            <!-- Formulario de contacto -->
+            <div class="formulario-contacto">
+                <h2>Envíanos un mensaje</h2>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <form action="https://formspree.io/f/PasteleriaLordCake@gmail.com" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            
+                <label for="email">Tu correo</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+                <button type="submit">Enviar</button>
+            </form>
+    
+            <!-- Información de contacto -->
+            <div class="info-contacto">
+                <h2>Visítanos</h2>
+                <p>Dirección:Domicilo conocido, Nicolás Bravo, Canatlán, Durango, México</p>
+                <p>Teléfono: +52 (618) 260 8877</p>
+                <p>Email: PasteleriaLordCake@gmail.com</p>
+    
+                <!-- Google Maps -->
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!4v1747067241655!6m8!1m7!1simvM_Rg-ugoRKllSfmmcPA!2m2!1d24.39077754396616!2d-104.7419665218506!3f111.95921968774672!4f-11.439827429463008!5f0.7820865974627469" allowfullscreen="" loading="lazy"></iframe>
+                
+            </div>
+        </div>
+    </main>
+    <div class="whatsapp-contacto">
+        <h2>Contáctanos por WhatsApp</h2>
+        <a href="https://wa.me/5216182608877?text=%20Gracias%20por%20contactarnos%20en%20un%20momento%20le%20atenderemos%20" class="whatsapp-btn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Enviar mensaje
+        </a>
+    </div>
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2024 Mi empresa. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto:PasteleriaLordCake@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>
